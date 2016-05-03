@@ -4,6 +4,18 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
 
-before_action :authenticate_user!
+before_filter :brands
 
+def brands
+products = Product.all
+@brands = []
+
+products.each do |product|
+	unless @brands.include?(product.brand)
+			@brands << product.brand
+			end
+		end
+	return @brands
+	end
 end
+
