@@ -1,5 +1,13 @@
 source 'https://rubygems.org'
 
+gem 'cancancan'
+
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+
+gem 'stripe', :git => 'http://github.com/stripe/stripe-ruby'
+
+gem 'figaro'
+
 gem 'devise'
 
 gem 'paperclip'

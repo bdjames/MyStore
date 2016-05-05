@@ -22,8 +22,9 @@
 <p><%= product.description %></p>
 </div>
 <p>Made by: <%= product.brand %></p>
+<%= button_to 'Add To Cart', line_items_path(product_id: product), class: "btn btn-success btn-sm" %> 
 
-<!-- Button trigger modal --> 
+
 
 </div>
 </div>
